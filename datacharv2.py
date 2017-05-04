@@ -56,8 +56,5 @@ class Corpus(object):
                     token += 1
         return ids
 
-#path = "data/penn"
-#ipdb.set_trace()
-#corpus = Corpus(path)
 
 

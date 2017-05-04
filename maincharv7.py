@@ -14,7 +14,7 @@ import ipdb
 
 import datacharv2
 import modelcharv2drop
-#import generatecharv1
+
 
 parser = argparse.ArgumentParser(description='PyTorch RNN/LSTM Language Model')
 parser.add_argument('--data', type=str, default='./data/rayuela',

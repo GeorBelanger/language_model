@@ -16,7 +16,7 @@ class RNNModel(nn.Module):
         self.encoder = nn.Embedding(ntoken, ninp)
         self.rnn = nn.LSTM(ninp, nhid, nlayers, dropout=0.5)
         
-        #self.rnn = nn.LSTM(ntoken, nhid, nlayers)
+        
 
         self.decoder = nn.Linear(nhid, ntoken)
 
@@ -38,7 +38,7 @@ class RNNModel(nn.Module):
         emb = self.encoder(input)
         output, hidden = self.rnn(emb, hidden)
         
-        #output, hidden = self.rnn(input, hidden)
+        
         output = self.drop(output)
         decoded = self.decoder(output.view(output.size(0)*output.size(1), output.size(2)))
         return decoded.view(output.size(0), output.size(1), decoded.size(1)), hidden
