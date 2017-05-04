@@ -1,3 +1,9 @@
+#Georges Belanger Albarran - Charachter language model
+
+#Based on the following blogs:
+#Sean Robertson Practical Pytorch: Classifying names with a charachter level RNN https://github.com/spro/practical-pytorch/blob/master/char-rnn-classification/char-rnn-classification.ipynb
+#Soumith Chintala Word Language Model: https://github.com/pytorch/examples/tree/master/word_language_model
+#--------------------------------------
 import argparse
 import time
 import math
